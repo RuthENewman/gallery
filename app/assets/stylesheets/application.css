@@ -19,12 +19,12 @@
  table, td, th {
    vertical-align: middle;
    border: none;
-   width: 40%;
+   width: 70%;
    height: 30%;
   }
  th {
    border-bottom: 1px solid #DDD;
-   font-size: 18px
+   font-size: 16px
  }
  h1 {
    padding: 30px;

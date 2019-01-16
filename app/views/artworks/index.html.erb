@@ -9,11 +9,12 @@
   </thead>
 
   <tbody>
-  <% @artworks.each do |artist| %>
+  <% @artworks.each do |artwork| %>
     <tr>
       <td><%= artwork.name %></td>
-      <td><%= link_to 'About this work', artwork %></td>
-    <td><%= link_to 'Delete artwork', artwork, method: :delete, data: { confirm: 'Are you sure?'} %></td>
+      <td><%= link_to artwork.artist.name, artist_path %></td>
+      <td><%= link_to 'About', artwork %></td>
+    <td><%= link_to 'Delete', artwork, method: :delete, data: { confirm: 'Are you sure?'} %></td>
     </tr>
   <% end %>
   </tbody>
