@@ -1,5 +1,7 @@
-<h1><%= @artist.name %></h1>
+<h1 class="header"><%= @artist.name %></h1>
 
+
+<h3><%= pluralize(@artist.artworks.count, 'Artwork') %></h3>
 <ul>
   <% @artist.artworks.each do |artwork| %>
     <li><%= link_to artwork.name, artwork_path(artwork) %></li>
@@ -9,3 +11,5 @@
 <%= link_to 'Back', artists_path %>
 <br>
 <br>
+<br>
+<%= link_to 'Add an Artwork', new_artwork_path %>

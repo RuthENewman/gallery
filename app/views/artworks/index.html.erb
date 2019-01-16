@@ -1,0 +1,30 @@
+<h1>All artworks in the gallery</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artwork name</th>
+      <th colspan="3"></th>
+      </tr>
+  </thead>
+
+  <tbody>
+  <% @artworks.each do |artist| %>
+    <tr>
+      <td><%= artwork.name %></td>
+      <td><%= link_to 'About this work', artwork %></td>
+    <td><%= link_to 'Delete artwork', artwork, method: :delete, data: { confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+  </tbody>
+  </table>
+
+
+<br>
+
+<%= link_to 'Add an Artist', new_artist_path %>
+<br>
+<%= link_to 'Add an Artwork', new_artwork_path %>
+<br>
+<%= link_to 'Home', artists_path %>
+<br>
