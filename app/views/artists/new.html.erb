@@ -1,0 +1,13 @@
+<h1>Add an Artist</h1>
+
+<%= form_for @artist do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <br>
+  <%= f.submit "Submit" %>
+<% end %>
+
+<br>
+<%= link_to 'Home', artists_path %>
+<br>

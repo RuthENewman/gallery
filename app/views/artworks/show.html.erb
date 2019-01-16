@@ -1,0 +1,8 @@
+
+Name: <%= @artwork.name %>
+By: <%= @artwork.artist %>
+
+<%= link_to "Delete", [@artist, artwork], method: :delete %>
+<br>
+<%= link_to 'Home', artists_path %>
+<br>

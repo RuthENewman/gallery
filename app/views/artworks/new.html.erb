@@ -1,0 +1,21 @@
+<h1>Add an Artwork</h1>
+
+<%= form_for [@artist, @artwork] do |f| %>
+  <div class="field">
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  </div>
+  <br />
+  <p>Artist <p>
+  <%= f.collection_select :artist_id, Artist.all, :id, :name %>
+  <br />
+  <br>
+  <div class="actions">
+  <%= f.submit %>
+  </div>
+<% end %>
+
+
+<br>
+<%= link_to 'Home', artists_path %>
+<br>
