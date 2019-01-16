@@ -1,5 +1,5 @@
 class ArtworksController < ApplicationController
-  before_action :set_artist, only: [:show, :create, :destroy]
+  before_action :set_artist, only: [:show, :destroy]
 
   def index
     @artworks = Artwork.all
@@ -14,7 +14,8 @@ class ArtworksController < ApplicationController
   end
 
   def create
-    @artwork = @artist.artworks.create(artwork_params)
+    @artist = Artist.find(params[:artwork][:artist_id])
+    @artwork = @artist.artworks.create!(artwork_params)
     if @artwork.valid?
       redirect_to @artwork
     else
@@ -23,7 +24,7 @@ class ArtworksController < ApplicationController
   end
 
   def destroy
-    @artwork = Artwork.find(params[:artist_id])
+    @artwork = Artwork.find(params[:id])
     @artwork.destroy
     redirect_to @artist
   end
@@ -35,7 +36,7 @@ class ArtworksController < ApplicationController
   end
 
   def set_artist
-    @artist = Artist.find(params[:artist_id])
+    @artist = Artwork.find(params[:id]).artist
   end
 
 end
