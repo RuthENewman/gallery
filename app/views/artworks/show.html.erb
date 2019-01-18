@@ -4,7 +4,11 @@
 <h3>By: <%= link_to @artwork.artist.name, artist_path(@artwork.artist) %></h3>
 <br>
 
+<img src="<% @artwork.image_url%>" />
+<br>
+<br>
 <%= link_to "Delete", @artwork, method: :delete, data: {confirm: 'Are you sure?'} %>
+
 
 <br>
 <%= link_to 'Home', artists_path %>
