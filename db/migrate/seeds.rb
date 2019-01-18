@@ -1,0 +1,33 @@
+
+
+
+picasso = Artist.create(name: "Pablo Picasso", birthyear: 1881, deathyear: 1973)
+kusama = Artist.create(name: "Yayoi Kusama", birthyear: 1929, deathyear: nil)
+malevich = Artist.create(name: "Kazimir Malevich", birthyear: 1879, deathyear: 1935)
+van_gogh = Artist.create(name: "Vincent Van Gogh", birthyear: 1853, deathyear: 1890)
+magritte = Artist.create(name: "Rene Magritte", birthyear: 1898, deathyear: 1967)
+shiota = Artist.create(name: "Chiharu Shiota", birthyear: 1972, deathyear: nil)
+cruz_diez = Artist.create(name: "Carlos Cruz Diez", birthyear: 1923, deathyear: nil)
+hockney = Artist.create(name: "David Hockney", birthyear: 1937, deathyear: nil)
+matisse = Artist.create(name: "Henri Matisse", birthyear: 1869, deathyear: 1954)
+soto = Artist.create(name: "Jesus Soto", birthyear: 1923, deathyear: 2005)
+wilson = Artist.create(name: "Richard Wilson", birthyear: 1953, deathyear: nil)
+kapoor = Artist.create(name: "Anish Kapoor", birthyear: 1954, deathyear: nil)
+
+
+the_weeping_woman = Artwork.create(name: "The Weeping Woman", artist: picasso, year: 1937)
+guernica = Artwork.create(name: "Guernica", artist: picasso, year: 1937)
+the_dream = Artwork.create(name: "The Dream", artist: picasso, year: 1932)
+black_square = Artwork.create(name: "Black Square", artist: malevich, year: 1914)
+an_englishman_in_moscow = Artwork.create(name: "An Englishman in Moscow", artist: malevich, year: 1913)
+narcissus_garden = Artwork.create(name: "Narcissus Garden", artist: kusama, year: 1966)
+sunflowers = Artwork.create(name: "Sunflowers", artist: van_gogh, year: 1888)
+the_starry_night = Artwork.create(name: "The Starry Night", artist: van_gogh, year: 1889)
+me_somewhere_else = Artwork.create(name: "Me, Somwehere Else", artist: shiota, year: 2018)
+chromosaturation = Artwork.create(name: "Chromosaturation", artist: cruz_diez, year: 1999)
+houston_penetrable = Artwork.create(name: "Houston Penetrable", artist: soto, year: 2014)
+all_the_eternal_love_i_have_for_the_pumpkins = Artwork.create(name: "All The Eternal Love I Have for the Pumpkins", artist: kusama, year: 2016)
+the_treachery_of_images = Artwork.create(name: "The Treachery of Images", artist: magritte, year: 1929)
+the_snail = Artwork.create(name: "The Snail", artist: matisse, year: 1953)
+twenty_fifty = Artwork.create(name: "20:50", artist: wilson, year: 1987)
+sky_mirror_blue = Artwork.create(name: "Sky Mirror, Blue", artist: kapoor, year: 2016)
