@@ -19,6 +19,7 @@
  table, td, th {
    vertical-align: middle;
    border: none;
+   margin: 0px auto;
    width: 70%;
    height: 30%;
   }
@@ -27,7 +28,15 @@
    font-size: 16px
  }
  h1 {
-   padding: 30px;
    text-align: center;
    font-size: 30px;
+   margin-bottom: 20px;
+   position: relative;
+ }
+li {
+  font-size: 18px;
+}
+
+ #lifespan {
+   text-align: center;
  }

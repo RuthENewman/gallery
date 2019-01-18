@@ -1,15 +1,19 @@
 <h1 class="header"><%= @artist.name %></h1>
 
+<% if @artist.deathyear != nil
+    @lifespan = "(" + @artist.birthyear.to_s + " - " + @artist.deathyear.to_s + ")"
+  else
+    @lifespan = "(" + @artist.birthyear.to_s + " - )"
+  end %>
+<h3 id="lifespan"><%= @lifespan %></h3>
 
-<h3><%= pluralize(@artist.artworks.count, 'Artwork') %></h3>
+<h4><%= pluralize(@artist.artworks.count, 'artwork') %></h4>
 <ul>
   <% @artist.artworks.each do |artwork| %>
     <li><%= link_to artwork.name, artwork_path(artwork) %></li>
   <% end %>
 </ul>
 
-<%= link_to 'Back', artists_path %>
 <br>
-<br>
-<br>
-<%= link_to 'Add an Artwork', new_artwork_path %>
+<h4><%= link_to 'Back', artists_path %></h4>
+<h4><%= link_to 'Add an Artwork', new_artwork_path %></h4>

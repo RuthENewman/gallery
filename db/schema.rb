@@ -14,12 +14,15 @@ ActiveRecord::Schema.define(version: 2019_01_16_105846) do
 
   create_table "artists", force: :cascade do |t|
     t.string "name"
+    t.integer "birthyear"
+    t.integer "deathyear"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "artworks", force: :cascade do |t|
     t.string "name"
+    t.integer "year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "artist_id"

@@ -1,9 +1,11 @@
 
 <h2><%= @artwork.name %></h2>
+<h4><%= @artwork.year %></h4>
 <h3>By: <%= link_to @artwork.artist.name, artist_path(@artwork.artist) %></h3>
 <br>
 
-<%= link_to "Delete", @artwork, method: :delete %>
+<%= link_to "Delete", @artwork, method: :delete, data: {confirm: 'Are you sure?'} %>
+
 <br>
 <%= link_to 'Home', artists_path %>
 <br>

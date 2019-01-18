@@ -1,11 +1,26 @@
 <h1>Add an Artist</h1>
-
+<br>
 <%= form_for @artist do |f| %>
+<div class="field">
   <%= f.label :name %>
   <%= f.text_field :name, :size => 40 %>
+  </div>
   <br>
-  <br>
+  <div class="field">
+    <%= f.label :birthyear, "Year of birth" %>
+    <br>
+    <%= f.number_field :birthyear, :size => 20, min: 1850, max: 2019 %>
+    </div>
+    <br>
+    <div class="field">
+      <%= f.label :deathyear, "Year of death (leave blank for living artists)" %>
+      <br>
+      <%= f.number_field :deathyear, :size => 20, min: 1870, max: 2019, :value => "" %>
+      </div>
+      <br>
+  <div class="action">
   <%= f.submit "Submit" %>
+  </div>
 <% end %>
 
 <br>

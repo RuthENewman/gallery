@@ -1,6 +1,3 @@
-
-
-
 picasso = Artist.create(name: "Pablo Picasso", birthyear: 1881, deathyear: 1973)
 kusama = Artist.create(name: "Yayoi Kusama", birthyear: 1929, deathyear: nil)
 malevich = Artist.create(name: "Kazimir Malevich", birthyear: 1879, deathyear: 1935)
@@ -31,3 +28,7 @@ the_treachery_of_images = Artwork.create(name: "The Treachery of Images", artist
 the_snail = Artwork.create(name: "The Snail", artist: matisse, year: 1953)
 twenty_fifty = Artwork.create(name: "20:50", artist: wilson, year: 1987)
 sky_mirror_blue = Artwork.create(name: "Sky Mirror, Blue", artist: kapoor, year: 2016)
+portrait_of_an_artist = Artwork.create(name: "Portrait of an Artist (Pool with Two Figures)", artist: hockney, year: 1972)
+a_bigger_splash = Artwork.create(name: "A Bigger Splash", artist: hockney, year: 1967)
+
+puts "-------------------SEEDED---------------------------------"
