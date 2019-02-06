@@ -11,10 +11,11 @@ soto = Artist.create(name: "Jesus Soto", birthyear: 1923, deathyear: 2005)
 wilson = Artist.create(name: "Richard Wilson", birthyear: 1953, deathyear: nil)
 kapoor = Artist.create(name: "Anish Kapoor", birthyear: 1954, deathyear: nil)
 
+# weeping_woman_img = "https://www.pablopicasso.org/images/paintings/the-weeping-woman.jpg"
 
 the_weeping_woman = Artwork.create(name: "The Weeping Woman", artist: picasso, year: 1937, image_url: "https://www.pablopicasso.org/images/paintings/the-weeping-woman.jpg")
 guernica = Artwork.create(name: "Guernica", artist: picasso, year: 1937, image_url: "https://upload.wikimedia.org/wikipedia/en/7/74/PicassoGuernica.jpg")
-the_dream = Artwork.create(name: "The Dream", artist: picasso, year: 1932, image_url: "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjV55Wb1fffAhWPnxQKHZWvA7UQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pablopicasso.org%2Fthe-dream.jsp&psig=AOvVaw1gZA-tt9BoI93R8r896j0v&ust=1547912406959009")
+the_dream = Artwork.create(name: "The Dream", artist: picasso, year: 1932, image_url: "http://pictify.saatchigallery.com/files/works/pablo-picasso-women-asleep-in-an-armchair-the-dream-1932-1362336510_b.jpg")
 black_square = Artwork.create(name: "Black Square", artist: malevich, year: 1914, image_url: "https://www.tate.org.uk/sites/default/files/styles/width-720/public/malevich5_0.jpg")
 an_englishman_in_moscow = Artwork.create(name: "An Englishman in Moscow", artist: malevich, year: 1913, image_url: "https://www.tate.org.uk/sites/default/files/styles/width-720/public/images/036.jpg")
 narcissus_garden = Artwork.create(name: "Narcissus Garden", artist: kusama, year: 1966, image_url: "https://artlogic-res.cloudinary.com/w_820,h_545,c_limit,f_auto,fl_lossy/ws-victoriamiro/usr/images/news/main_image/items/c1/c1644c37d1e444cf8f30e3225e26f3c9/screen-shot-2018-07-01-at-16.20.08.png")
@@ -28,7 +29,8 @@ the_treachery_of_images = Artwork.create(name: "The Treachery of Images", artist
 the_snail = Artwork.create(name: "The Snail", artist: matisse, year: 1953, image_url: "https://www.tate.org.uk/art/images/work/T/T00/T00540_10.jpg")
 twenty_fifty = Artwork.create(name: "20:50", artist: wilson, year: 1987, image_url: "https://carinawestling.files.wordpress.com/2011/12/img_3050.jpg")
 sky_mirror_blue = Artwork.create(name: "Sky Mirror, Blue", artist: kapoor, year: 2016, image_url: "https://d33hx0a45ryfj1.cloudfront.net/additional/Dynamic/media/50fee232368d7918?w=1100&h=10000&crop=0")
-portrait_of_an_artist = Artwork.create(name: "Portrait of an Artist (Pool with Two Figures)", artist: hockney, year: 1972, image_url: "https://www.tate.org.uk/art/images/work/T/T03/T03254_10.jpg")
-a_bigger_splash = Artwork.create(name: "A Bigger Splash", artist: hockney, year: 1967, image_url: "https://www.christies.com/media-library/images/features/articles/2018/09/04/david-hockney-portrait-of-an-artist-pool-with-two-figures/davidhockneyb1937portraitofanartistpoolwithtwofigures19722400.jpg?width=383&quality=70")
+portrait_of_an_artist = Artwork.create(name: "Portrait of an Artist (Pool with Two Figures)", artist: hockney, year: 1972, image_url: "https://www.christies.com/media-library/images/features/articles/2018/09/04/david-hockney-portrait-of-an-artist-pool-with-two-figures/davidhockneyb1937portraitofanartistpoolwithtwofigures19722400.jpg?width=383&quality=70")
+a_bigger_splash = Artwork.create(name: "A Bigger Splash", artist: hockney, year: 1967, image_url: "https://www.tate.org.uk/art/images/work/T/T03/T03254_10.jpg")
+
 
 puts "-------------------SEEDED---------------------------------"

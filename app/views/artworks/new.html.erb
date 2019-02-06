@@ -12,10 +12,17 @@
   </div>
   <br />
   <%= f.label :artist_id, "Artist:" %>
+  <br>
   <%= f.collection_select :artist_id, Artist.all, :id, :name %>
   <br />
+  <div class="field">
+  <br>
+  <%= f.label :image_url, "Add a link to an image of the artwork"%>
+  <br>
+  <%= f.text_field :image_url, :size => 100 %>
   <br>
   <div class="actions">
+  <br>
   <%= f.submit %>
   </div>
 <% end %>
