@@ -2,19 +2,17 @@
 <br>
 <%= form_for @artist do |f| %>
 <div class="field">
-  <%= f.label :name %>
+  <p class="label-details"><%= f.label :name %></p>
   <%= f.text_field :name, :size => 40 %>
   </div>
   <br>
   <div class="field">
-    <%= f.label :birthyear, "Year of birth" %>
-    <br>
+    <p class="label-details"><%= f.label :birthyear, "Year of birth" %></p>
     <%= f.number_field :birthyear, :size => 20, min: 1850, max: 2019 %>
     </div>
     <br>
     <div class="field">
-      <%= f.label :deathyear, "Year of death (leave blank for living artists)" %>
-      <br>
+    <p class="label-details"><%= f.label :deathyear, "Year of death (leave blank for living artists)" %></p>
       <%= f.number_field :deathyear, :size => 20, min: 1870, max: 2019, :value => "" %>
       </div>
       <br>
@@ -23,6 +21,6 @@
   </div>
 <% end %>
 
-<br>
-<%= link_to 'Home', artists_path %>
-<br>
+<div id="new-form-home-link" class="footer-links">
+<h4><%= link_to 'Home', artists_path %></h4>
+</div>

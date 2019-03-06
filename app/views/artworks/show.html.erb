@@ -1,13 +1,18 @@
-
-<h2><%= @artwork.name %></h2>
-<h4><%= @artwork.year %></h4>
-<h3>By: <%= link_to @artwork.artist.name, artist_path(@artwork.artist) %></h3>
+<div id="artwork-page">
+<div class="artwork-bio">
+  <h2><%= @artwork.name %></h2>
+  <h4><%= @artwork.year %></h4>
+  <h3>By: <%= link_to @artwork.artist.name, artist_path(@artwork.artist) %></h3>
+</div>
 <br>
 
-<img src=<%= @artwork.image_url%> />
+<img class="artwork-image" src=<%= @artwork.image_url%> alt=<%= @artwork.name %> />
 <br>
 <br>
-<h5><%= link_to "Delete this artwork from the gallery", @artwork, method: :delete, data: {confirm: 'Are you sure?'} %></h5>
-<h5><%= link_to "Back to all " + @artwork.artist.name , artist_path(@artwork.artist) %></h5>
-<h5><%= link_to 'Home', artists_path %></h5>
+<div class="footer-links">
+  <h4><%= link_to "Delete this artwork from the gallery", @artwork, method: :delete, data: {confirm: 'Are you sure?'} %></h4>
+  <h4><%= link_to "Back to all " + @artwork.artist.name , artist_path(@artwork.artist) %></h4>
+  <h4><%= link_to 'Home', artists_path %></h4>
+</div>
 <br>
+</div>

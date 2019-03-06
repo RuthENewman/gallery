@@ -7,13 +7,15 @@
   end %>
 <h3 id="lifespan"><%= @lifespan %></h3>
 
-<h4><%= pluralize(@artist.artworks.count, 'artwork') %></h4>
+<h4 class="quantity"><%= pluralize(@artist.artworks.count, 'artwork') %></h4>
 <ul>
   <% @artist.artworks.each do |artwork| %>
-    <li><%= link_to artwork.name, artwork_path(artwork) %></li>
+    <li className="artwork-link"><%= link_to artwork.name, artwork_path(artwork) %></li>
   <% end %>
 </ul>
 
 <br>
-<h4><%= link_to 'Back', artists_path %></h4>
-<h4><%= link_to 'Add an Artwork', new_artwork_path %></h4>
+<div class="footer-links">
+  <h4><%= link_to 'Back', artists_path %></h4>
+  <h4><%= link_to 'Add an Artwork', new_artwork_path %></h4>
+</div>

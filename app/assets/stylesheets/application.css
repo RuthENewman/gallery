@@ -14,35 +14,105 @@
  *= require_self
  */
 
- body { padding-top: 100px; }
- footer { margin-top: 100px; }
+
+
+ body {
+   padding-top: 6em;
+    font-family: 'Raleway', sans-serif;
+  }
+
+img {
+  display: block;
+  margin: 0 auto;
+
+}
+
  table, td, th {
    vertical-align: middle;
    border: none;
    margin: 0px auto;
    width: 70%;
    height: 30%;
-   font-size: 20px;
+   font-size: 1.2em;
   }
+
  th {
    border-bottom: 1px solid #DDD;
-   font-size: 16px
+   font-size: 1.1em;
+   font-family: 'Raleway', sans-serif;
  }
  h1 {
    text-align: center;
    font-size: 30px;
+   margin-top: 0;
    margin-bottom: 20px;
    position: relative;
+   font-family: 'Raleway', sans-serif;
  }
 li {
   font-size: 18px;
+  font-family: 'Raleway', sans-serif;
 }
 
-img {
-  height: 70%;
-  width: 70%;
+.artwork-image {
+  max-height: 350px;
+  max-width: 700px;
+  margin-left: 2em;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
 }
 
  #lifespan {
    text-align: center;
+   font-family: 'Raleway', sans-serif;
  }
+
+.footer-links {
+   padding-top: 1.5em;
+   margin-left: 2em;
+   padding-bottom: 1em;
+ }
+
+ .footer-links a, .footer-links h4 {
+    font-family: 'Raleway', sans-serif;
+ }
+
+ .quantity {
+    font-family: 'Raleway', sans-serif;
+    margin: 1em;
+ }
+
+ .artwork-bio {
+   margin-top: 4em;
+  margin-left: 2em;
+ }
+
+ .artwork-bio h2, .artwork-bio h3, .artwork-bio h4 {
+  font-family: 'Raleway', sans-serif;
+ }
+
+  #artwork-link {
+    list-style: none;
+    margin-left: 2em;
+  }
+
+  #artwork-page {
+    position: absolute;
+  }
+
+  .welcome-page-header {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  .label-details {
+    font-size: 1.2em;
+  }
+
+  #new-form-home-link {
+    padding-bottom: 1em;
+    font-size
+  }

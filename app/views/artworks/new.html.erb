@@ -2,25 +2,22 @@
 <br>
 <%= form_for [@artist, @artwork] do |f| %>
   <div class="field">
-  <%= f.label :name, "Name:" %>
+  <p class="label-details"> <%= f.label :name, "Name:" %></p>
   <%= f.text_field :name, :size => 50 %>
   </div>
   <br />
   <div class="field">
-  <%= f.label :year, "Year:" %>
+  <p class="label-details"><%= f.label :year, "Year:" %></p>
   <%= f.number_field :year, :size => 15, min: 1850, max: 2019 %>
   </div>
-  <br />
-  <%= f.label :artist_id, "Artist:" %>
   <br>
+  <p class="label-details"><%= f.label :artist_id, "Artist:" %></p>
   <%= f.collection_select :artist_id, Artist.all, :id, :name %>
-  <br />
+  <br>
+  <br>
   <div class="field">
-  <br>
-  <%= f.label :image_url, "Add a link to an image of the artwork"%>
-  <br>
-  <%= f.text_field :image_url, :size => 100 %>
-  <br>
+  <p class="label-details"><%= f.label :image_url, "Add a link to an image of the artwork"%></p>
+  <%= f.text_field :image_url, :size => "90%" %>
   <div class="actions">
   <br>
   <%= f.submit %>
@@ -28,8 +25,7 @@
 <% end %>
 
 
-<br>
+<div class="footer-links">
 <h4><%= link_to "Add an artist", new_artist_path %></h4>
-
 <h4><%= link_to 'Home', artists_path %></h4>
-<br>
+</div>
