@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_01_18_151257) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "artists", force: :cascade do |t|
     t.string "name"
     t.integer "birthyear"
@@ -25,9 +28,10 @@ ActiveRecord::Schema.define(version: 2019_01_18_151257) do
     t.integer "year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "artist_id"
+    t.bigint "artist_id"
     t.string "image_url"
     t.index ["artist_id"], name: "index_artworks_on_artist_id"
   end
 
+  add_foreign_key "artworks", "artists"
 end
